@@ -1,6 +1,6 @@
 <script setup>
 import Icons from './Icons.vue';
-import Clock from '../../Icons/Clock.vue';
+import Clock from '../../icons/Clock.vue';
 import Buttons from './Buttons.vue';
 import { ref } from 'vue';
 const props = defineProps({
