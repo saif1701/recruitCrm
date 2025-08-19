@@ -1,6 +1,6 @@
 <script setup>
 import Icons from '../common/Icons.vue';
-import Clock from '../../Icons/Clock.vue';
+import Clock from '../../icons/Clock.vue';
 const notesList = [{
 	desc: 'Lorem dolore sit et aute cupidatat eu Lorem tempor proident consequat. In dolore mollit laborum ex cillum laboris occaecat ipsum Lorem cupidatat.',
 	name: 'John Doe',
