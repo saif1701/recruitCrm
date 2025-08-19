@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 import Buttons from '../common/Buttons.vue';
 import Icons from '../common/Icons.vue';
-import Modal from '../Modal/Modal.vue';
+import Modal from '../modal/Modal.vue';
 const actionItems = [
 	{ icon: "bxs-star", action: "star" },
 	{ icon: "bxs-hot", action: "hot" },
