@@ -1,0 +1,121 @@
+.candidate-wrappper{
+	&__info{
+		padding: 15px;
+		@include flexBox(null,space-between,flex-start);
+		border-bottom: 1px solid $border-color;
+		@include respond(899px){
+			flex-wrap: wrap;
+			gap: 15px
+		}
+	}
+	&__profile{
+		&-wrap{
+			@include flexBox(null,null,center);
+			gap: 10px;
+			@include respond(450px){
+				gap:25px
+			}
+		}
+		&-info{
+			h4{
+			font-size: 18px;
+			font-weight: 600;
+			color: $secondary-color;
+			}
+		}
+		&-top--bar,&-bottom--bar,&-social--icons{
+			@include flexBox(null,null,center);
+			gap: 10px;
+			color: $text-color;
+		}
+		&-top--bar{
+			margin-bottom: 10px;
+			@include respond(450px){
+				flex-wrap: wrap;
+			}
+		}
+		&-social--icons{
+			font-size: 0;
+			line-height: 1;
+			li,span{
+				font-size: 0;
+			}
+		}
+		&-bottom--bar{
+			gap: 25px;
+			@include respond(450px){
+				flex-wrap: wrap;
+				gap: 10px
+			}
+		}
+		&-action{
+			&--wrap{
+				@include flexBox();
+				gap: 10px;
+				@include respond(450px){
+					flex-wrap: wrap;
+					button:first-child{
+						flex-basis: 100%;
+					}	
+					button{
+						flex-basis: calc(50% - 5px);
+					}
+				}
+				button:not(.red):hover{
+					background-color: $body-gray-color;
+				}
+			}
+		}
+	}
+	&__email-phone{
+		&--info{
+			color: $text-color;
+			font-weight: 600;
+			padding: 15px;
+			@include flexBox(null,space-between,null);
+			border-bottom: 1px solid $border-color;
+			flex-wrap: wrap;
+			@include respond(767px){
+				gap: 10px
+			}
+			p,span{
+				@include flexBox(null,null,center);
+				font-weight: 600;
+			}
+			p{
+				gap: 10px;
+				flex-wrap: wrap;
+			}
+			p:first-child{
+				color: $primary-color;
+			}
+		}
+	}
+}
+
+.candidate-details{
+	padding: 0 15px;
+	margin: 11px 0 25px;
+	ul{
+		column-count: 2;
+		@include respond(767px){
+			column-count: 1
+		}
+		li{
+			@include flexBox();
+			margin: 0 0 16px;
+			line-height: 20px;
+			flex-wrap: wrap;
+			@include respond(500px){
+				gap: 10px;
+			}
+			strong,span{
+				flex: 1 1 50%;
+				@include respond(500px){
+					flex-basis: 100%;
+
+				}
+			}
+		}
+	}
+}

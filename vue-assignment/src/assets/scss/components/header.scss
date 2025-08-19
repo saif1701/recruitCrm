@@ -1,0 +1,84 @@
+.header{
+	&-top{
+		&__bar{
+			@include flexBox(null,space-between,center,);
+			padding: 10px 20px; 
+			box-shadow:  0px 1px 2px -2px #000000;
+			background-color: $white-color;
+			@include respond(899px){
+				flex-wrap: wrap;
+				gap: 10px;
+				justify-content: center;
+			}
+		}
+	}
+	&-logo{
+		@include respond(899px){
+			order: 1;
+			flex-basis: 100%;
+			img{
+				margin: 0 auto;
+			}
+		}
+	}
+	&-search{ 
+		&__bar{
+			background-color: $body-gray-color;
+			padding: 10px;
+			width: 360px;
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			border-radius: 5px;
+			@include respond(1200px){
+				width: 275px;
+			}	
+			@include respond(899px){
+				order: 2;
+				width: 100%;
+			}
+			&-icon {
+				line-height: 1;
+				font-size: 24px;
+			}
+			input {
+				width: 100%;
+				font-size: 14px;
+				line-height: 20px;
+				font-weight: 400;
+			}	
+		}
+	}
+	&-action{
+		&__wrapper{
+			@include flexBox();
+			gap: 20px;	
+			@include respond(1200px){
+				gap: 10px
+			}
+			@include respond(899px){
+				order: 3;
+				flex-basis: 100%
+			}
+			@include respond(599px){
+				flex-wrap: wrap;
+				justify-content: center
+			}
+			button:not(.blue-bg):hover{
+				background-color: $body-gray-color
+			}
+		}
+	}
+	&-user{
+		&__wrapper{
+			@include flexBox(null,null,center);
+			gap: 8px;
+			@include respond(899px){
+				margin-left: auto;
+			}
+			@include respond(599px){
+				margin: auto;
+			}
+		}
+	}
+}

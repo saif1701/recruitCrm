@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Reset base styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default form styles */
+button,
+input,
+textarea,
+select {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* Ensure images scale properly */
+img,
+picture,
+video,
+canvas{
+  max-width: 100%;
+  display: block;
+}
+
+/* Reset headings and text */
+h1, h2, h3, h4, h5, h6,
+p {
+  font-weight: normal;
+}
+
+/* Body defaults */
+body {
+  min-height: 100vh;
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+  background-color: $body-gray-color;
+}

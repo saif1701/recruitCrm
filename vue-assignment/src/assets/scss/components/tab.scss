@@ -1,0 +1,49 @@
+.tab-container{
+	@include flexBox();
+	background-color: #E9ECEF;	
+	overflow-x: auto;
+	white-space: nowrap;
+	p{
+		padding: 15px;
+		border-bottom: 2px solid transparent;
+		font-weight: 600;
+		color: $black-color-2;
+		cursor: pointer;
+		&.tab-active,&:hover{
+			background-color: $white-color;
+			border-color:$primary-color;
+		}
+		@include respond(1440px){
+			padding: 10px;
+		}
+	}	
+}
+
+.assigned-job{
+	&__wrapper{
+		padding: 16px 16px 00px;
+	}
+	&__content,&__actions{
+		@include flexBox(null,space-between,center);
+		p{
+			font-weight: 600;
+		}
+	}
+	&__actions{
+		gap: 12px;
+		@include respond(425px){
+			flex-wrap: wrap;
+			gap: 10px;
+			button{
+				flex-basis: 100%;
+			}
+		}
+	}
+	&__content{
+		margin-bottom: 15px;
+		@include respond(767px){
+			flex-wrap: wrap;
+			gap: 10px;
+		}
+	}
+}

@@ -1,0 +1,66 @@
+.modal-overlay {
+	position: fixed;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.5);
+	@include flexBox(null,center,center);
+	z-index: 999;
+	.modal {
+	  background: #fff;
+	  border-radius: 8px;
+	  padding: 20px;
+	  max-width:calc(100vw - 30px);
+	  height: calc(100vh - 30px);
+	  @include respond(500px){
+		overflow-y: scroll
+	}
+	  .modal-header {
+		@include flexBox(null,space-between,center);
+		margin-bottom: 20px;
+		border-bottom: 1px solid $border-color;
+		padding-bottom: 20px;
+		h3{
+			font-weight: 600;
+			color: $primary-color;
+		}
+		.close {
+		  border: none;
+		  background: none;
+		  font-size: 20px;
+		  cursor: pointer;
+		  flex-basis: 0;
+		}
+	  }
+	  ul{
+		  column-count: 2;
+		  @include respond(500px){
+			column-count: 1;
+		}
+	  }
+  
+	  .form-group {
+		margin-bottom: 20px;
+		@include flexBox(null,null,center);
+		gap: 10px;
+		label{
+			font-weight: 600;
+			width: 50%;
+		}
+		input,textarea{
+			background-color: #f8f9fa;
+			padding: 5px;
+			width: 50%;
+			font-family: 'inter';
+		}
+		textarea{
+			min-height: 50px;
+		}
+	  }
+	  button.modal-button{
+		@extend button;
+		background-color: $primary-color;
+		padding: 10px 20px;
+		color: $white-color;
+	  }
+	}
+  }
+  

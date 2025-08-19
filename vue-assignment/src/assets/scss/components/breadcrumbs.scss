@@ -1,0 +1,19 @@
+.breadcrumbs{
+	@include flexBox(null,null,center);
+	
+	gap: 10px;
+	color: $text-color;
+	font-weight: 600;
+	&-active{
+		color: $primary-color;
+	}
+	li:last-child{
+		@include flexBox(null,null,center);
+		gap: 10px;
+		span{
+			border: 1px solid #E9ECEF;
+			padding: 8px;
+			border-radius: 5px;
+		}
+	}
+}

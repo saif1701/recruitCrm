@@ -1,0 +1,47 @@
+.tab-card{
+	@include flexBox(null,space-between,center);
+	padding: 13px 16px;
+	border: 1px solid $border-color; 
+	margin-bottom: 15px;
+	border-radius: 5px;
+	flex-wrap: wrap;
+	@include respond(767px){
+		gap: 10px
+	}
+	&__job--wrap{
+		@include flexBox(null,null,center);
+		gap: 10px;
+		@include respond(767px){
+			flex-basis: 100%;
+		}
+	}
+	&__recruiter{
+		@include flexBox(column,null,null);
+		gap: 5px;
+		i,svg{
+			font-size: 16px;
+			vertical-align: -3px;
+		}
+		@include respond(767px){
+			flex-basis: calc(50% - 5px);
+		}
+		@include respond(425px){
+			flex-basis: 100%;
+		}
+	}
+	&__tag{
+		background-color: #F8F9FA;
+		border-radius: 5px;
+		padding: 4px 7px;
+		font-weight: 600;
+		@include respond(767px){
+			flex-basis: calc(50% - 5px);
+			text-align: center;
+			padding: 10px;
+		}
+		@include respond(425px){
+			flex-basis: 100%;
+		}
+	}
+}
+

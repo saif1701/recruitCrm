@@ -1,0 +1,19 @@
+.menu-wrapper{
+	position: fixed;
+	background-color: $menu-color;
+	height: 100%;
+	padding: 10px;
+	&__block{
+		li{
+			padding: 10px;
+			color: #fff;
+			font-size: 18px;
+			line-height: 1;
+			margin-bottom: 10px;
+			border-radius: 50%;
+			&:hover{
+				background-color: $menu-hover-color;
+			}
+		}
+	}
+}

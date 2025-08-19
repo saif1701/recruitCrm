@@ -1,0 +1,64 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
+@import './base/reset.scss' ;
+@import './components/menu.scss';
+@import './components/header.scss';
+@import './common/button.scss';
+@import './components/breadcrumbs.scss';
+@import './components/candidate.scss';
+@import './components/tab.scss';
+@import './components/tabCard.scss';
+@import './common/toggle-switch.scss';
+@import './components/sidebar.scss';
+@import './components/modal.scss';
+
+.content-wrapper{
+	width: calc(100% - 60px);
+	margin-left: auto;
+	&-block{
+		@include flexBox();
+		flex-wrap: wrap;
+	}
+	&__left{
+		background-color: $white-color;
+		width: calc(100% - 435px);
+		@include respond(1250px){
+			width: calc(100% - 300px);
+		}
+		@include respond(1100px){
+			width: 100%;
+		}
+	}
+	&__right{
+		width: 435px;
+		@include respond(1250px){
+			width: 300px;
+		}
+		@include respond(1100px){
+			width: 100%;
+		}
+	}
+	&__page-header{
+		background-color: #F8F9FA;
+		padding: 15px;
+		@include flexBox(null,space-between,center);
+		@include respond(899px){
+			flex-wrap: wrap;
+			gap: 15px;
+		}
+	}
+}
+
+.separator-line{
+	border: 1.5px solid;
+	border-radius: 2px;
+	border-color: $border-color;
+	&.vertical{
+		border-color: $primary-color;
+		margin-bottom: 10px;
+	}
+}
+
+i{
+	color: $icon-color;
+}

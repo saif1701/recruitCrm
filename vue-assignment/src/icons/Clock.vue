@@ -1,0 +1,9 @@
+<template>
+	<svg width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" transform=""
+		id="injected-svg"><!--Boxicons v3.0 https://boxicons.com | License  https://docs.boxicons.com/free-->
+		<path
+			d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10 10-4.49 10-10S17.51 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8">
+		</path>
+		<path d="M13 6h-2v6c0 .55.45 1 1 1h6v-2h-5z"></path>
+	</svg>
+</template>

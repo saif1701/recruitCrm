@@ -1,0 +1,62 @@
+button{
+	color: $text-color;
+	border-radius: 6px;
+	font-family: 'Inter';
+	cursor: pointer;
+	&:hover{
+		text-decoration: underline;
+	}
+	&.rounded{
+		line-height: 0;
+		font-size: 16px;
+		padding: 13px;
+		border-radius: 50%;
+	}
+	&.border{
+		border: 1px solid $border-color;
+	}
+	&.box-shadow{
+		box-shadow: $box-shadow;
+	}
+	&.white{
+		color: $white-color;
+		i{
+			color: $white-color;
+		}
+	}
+	&.white-bg{
+		background-color: $white-color;
+	}
+	&.blue-bg{
+		background-color: #1170CA;
+		border: 0;
+	}
+	&.rectangle{
+		padding: 8px 12px;
+		font-weight: 600;
+	}
+	&.red{
+		background-color: $red-color-bg;
+		color: $red-color;
+		border-color: $red-color-border;
+	}
+	&.blue{
+		background-color: $primary-color;
+		border: 0;
+		color: $white-color;
+	}
+	&.black{
+		color: $black-color-2;
+	}
+	&.blue-light{
+		background-color: $blue-light-color;
+		border: 0;
+		i{
+			color: $primary-color;
+		}
+	}
+}
+
+i.white{
+	color: $white-color;
+}
