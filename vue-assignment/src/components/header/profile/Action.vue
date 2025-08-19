@@ -1,6 +1,6 @@
 <script setup>
 import Icons from '../../common/Icons.vue';
-import User from './user.vue';
+import User from './User.vue';
 const actionItems = [
 	{ icon: "bx-plus", divider: true },
 	{ icon: "bx-gift", divider: false },
