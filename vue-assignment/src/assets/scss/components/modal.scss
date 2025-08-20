@@ -9,9 +9,14 @@
 	  border-radius: 8px;
 	  padding: 20px;
 	  max-width:calc(100vw - 30px);
-	  height: calc(100vh - 30px);
-	  @include respond(500px){
-		overflow-y: scroll
+	  height: auto;
+	  @media screen and (max-height:600px) {
+		overflow-y: scroll;
+		height: calc(100% - 30px)
+	  }
+	  @include respond(600px){
+		overflow-y: scroll;
+		height: calc(100% - 30px)
 	}
 	  .modal-header {
 		@include flexBox(null,space-between,center);

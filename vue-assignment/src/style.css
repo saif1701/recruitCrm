@@ -631,11 +631,18 @@ i.white {
   border-radius: 8px;
   padding: 20px;
   max-width: calc(100vw - 30px);
-  height: calc(100vh - 30px);
+  height: auto;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-height: 600px) {
   .modal-overlay .modal {
     overflow-y: scroll;
+    height: calc(100% - 30px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .modal-overlay .modal {
+    overflow-y: scroll;
+    height: calc(100% - 30px);
   }
 }
 .modal-overlay .modal .modal-header {
